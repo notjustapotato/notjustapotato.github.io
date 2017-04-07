@@ -1,0 +1,73 @@
+ .potato{
+  height:240px;
+  max-width: 95%;
+  max-height: 95%;
+  opacity: 0;
+  animation-name: show;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:100px;
+}
+
+.drawpotato{
+  height:240px;
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  right: 0;
+  margin: auto;
+  display: block;
+}
+
+svg path#dots,#outline,#line,#shadow,#cut{
+  fill-opacity: 0;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-dasharray: 760;
+  stroke-dashoffset: 760;
+  animation: draw 2.5s 1 linear ;
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    animation-delay:1;
+  }
+}
+
+ @keyframes draw  {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+@media screen and (max-width: 500px){
+    .Potato{
+  max-width: 450px;
+  height:auto;
+  max-height: 95%;
+  opacity: 0;
+  animation-name: show;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:50px;
+}
+
+.drawpotato{
+  position:absolute;
+  display: block;
+  top:119px;
+
+}
+}

@@ -1,0 +1,444 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #404040;
+}
+p {
+    line-height: 1.5;
+    margin: 10px 0;
+}
+p a {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+a {
+    color: #404040;
+}
+a:hover, a:focus {
+    color: #0085a1;
+}
+a img:hover, a img:focus {
+    cursor: zoom-in;
+}
+blockquote {
+    color: #2D9689;
+    font-weight: 400;
+    font-style: italic;
+    margin: 50px 0;
+    font-size: 24px;
+}
+hr.small {
+    max-width: 100px;
+    margin: 15px auto;
+    border-width: 4px;
+    border-color: white;
+}
+
+/*------------------------------------*\
+      NAV
+\*------------------------------------*/
+
+.navbar-fixed-top {
+    position: absolute;
+}
+
+/*while it's selected */
+
+.navbar-default .navbar-nav li a:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-nav li a:hover {
+    border-bottom: 2px solid #ecf0f1;
+    background-color: transparent;
+}
+.navbar-default li a.active {
+    color: black;
+    border-bottom: 2px solid #ecf0f1;
+}
+@media(min-width:767px) {
+    .navbar {
+        background-color: transparent;
+        border-color: transparent;
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out, padding .3s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .3s ease-in-out;
+        transition: background .5s ease-in-out, padding .3s ease-in-out;
+    }
+    .top-nav-collapse {
+        background-color: #EB5C57;
+        padding: 0;
+    }
+    .navbar-default .nav li a {
+        color: #fff;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+}
+
+/*------------Mobile view---------------*/
+
+@media(max-width:767px) {
+    .navbar-header {
+        background-color: #2D9689;
+    }
+    .icon-bar {
+        color: white;
+    }
+    .navbar-default {
+        border: none;
+    }
+}
+
+/*------------------------------------*\
+      HEADER
+\*------------------------------------*/
+
+.intro-header {                                    /*bg img */
+    background-color: #2D9689;
+    background: no-repeat center center;
+    background-attachment: scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    margin-bottom: 50px;
+    height: 400px;
+}
+
+
+.intro-header .site-heading, .intro-header .post-heading{
+    padding: 200px 0 50px;
+    color: white;
+}
+
+
+
+
+.intro-header .site-heading .subheading, .intro-header .page-heading .subheading {
+    font-size: 24px;
+    line-height: 1.1;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 10px 0 0;
+}
+
+
+
+.intro-header .post-heading h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.intro-header .post-heading .subheading, .intro-header .post-heading .meta {
+    line-height: 1.1;
+    display: block;
+}
+.intro-header .post-heading .subheading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 10px 0 30px;
+    font-weight: 600;
+}
+.intro-header .post-heading .meta {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+}
+.intro-header .post-heading .meta a {
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .intro-header .post-heading h1 {
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+    .intro-header .post-heading .subheading {
+        font-size: 30px;
+    }
+}
+
+
+.post-sub-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+}
+.post-sub-heading p {
+    margin: 0;
+}
+
+
+/*------------------------------------*\
+      PROJECT DESCRIPTION
+\*------------------------------------*/
+.article-1{
+  margin:0;
+  padding: 0 20%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .article-1{
+    margin:0;
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .article-1{
+    margin:0;
+    padding: 0 3%;
+  }
+}
+
+
+.section-heading {
+    font-size: 30px;
+    margin-top: 60px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.caption {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    font-style: italic;
+    margin: 0;
+    display: block;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+/*------------------------------------*\
+      LAYOUT ELEMENT
+\*------------------------------------*/
+.showcase-img{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.bg{
+  background: #F0EEE6;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.shadow{
+  box-shadow: 2px 2px 10px #D5D4D4;
+}
+
+.block-of-3{
+  display:inline-block;
+  width:31%;
+  min-height: 240px;
+  background: #EEEEEE;
+  padding:10px;
+  margin:5px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: all 0.3s ease-in-out;
+  /** Firefox **/
+  -o-transition: all 0.3s ease-in-out;
+  /** Opera **/
+}
+
+.block-of-3:hover{
+  box-shadow: 2px 2px 10px #D5D4D4;
+
+  transform: translate(0, -10px);
+  -webkit-transform: translate(0, -10px);
+  /** Chrome & Safari **/
+  -o-transform: translate(0, -10px);
+  /** Opera **/
+  -moz-transform: translate(0, -10px);
+  /** Firefox **/
+}
+
+@media only screen and (max-width: 750px) {
+    .block-of-3 {
+        width:94%;
+        display: block;
+        min-height: 50px;
+        padding:10px;
+        margin:3%;
+    }
+}
+
+
+.feature-block{
+  display:block;
+  float: left;
+  width:31%;
+  min-height: 300px;
+
+  margin:5px;
+  padding: 5px 5px 40px 5px;
+  position:sticky;
+  text-align: center;
+}
+
+.feature-block img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+}
+
+@media only screen and (max-width: 750px) {
+    .feature-block {
+        width:94%;
+        display: block;
+        min-height: 50px;
+        padding:10px;
+        margin:3%;
+    }
+}
+
+
+.half{
+  display:inline-block;
+  width:48%;
+  margin:auto;
+
+
+
+  position: relative;
+
+}
+
+
+
+
+.section{
+  display: block;
+  width:45%;
+  float:right;
+  margin:10px 50px 10px 0;
+  display: inline-block;
+    padding: 10px 10px 10px 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .section{
+    width:100%;
+    margin:auto;
+  }
+}
+
+.clickable-prototype{
+float:right;
+margin-top:-380px;
+padding:0;
+}
+
+@media only screen and (max-width: 750px) {
+    .clickable-prototype{
+      margin-top:-240px;
+      margin-bottom: 0;
+    }
+
+iframe{
+  margin:0;
+  padding:0;
+
+
+}
+
+.task-section{
+
+  margin:0;
+  padding-bottom: 100px;
+}
+
+
+
+/*Project vision ****/
+.vision{
+	max-width: 700px;
+	margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.circle{
+  display:inline-block;
+  float:left;
+  width:220px;
+  height:220px;
+  border-radius:150px;
+  font-size:20px;
+  color:#fff;
+  line-height:220px;
+  text-align:center;
+  background:#634125;
+  margin:20px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  }
+
+.circle:hover{
+    background:#A05F27 ;
+    box-shadow: 0px 2px 10px #979797;
+}
+
+/*------------------------------------*\
+      IMAGE
+\*------------------------------------*/
+
+.full-img {
+  left: -100px;
+  position: absolute;
+  z-index: 10;
+}
+
+
+.h-visiual img{
+  left:-500px;
+  z-index: 5;
+}
+
+
+
+/*------------------------------------*\
+      FOOTER
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+      TEXT SELECTION
+\*------------------------------------*/
+::-moz-selection {
+    color: white;
+    text-shadow: none;
+    background: #0085a1;
+}
+::selection {
+    color: white;
+    text-shadow: none;
+    background: #0085a1;
+}
+img::selection {
+    color: white;
+    background: transparent;
+}
+img::-moz-selection {
+    color: white;
+    background: transparent;
+}
+body {
+    webkit-tap-highlight-color: #0085a1;
+}
